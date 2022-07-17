@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvKomponenDiambil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komponen yang diambil: "
+            />
+
+        <TextView
+            android:id="@+id/tvKomponenDiambilVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/tvKomponenDiambil"
+            android:text="Restor" />
+
+        <TextView
+            android:id="@+id/tvJumlahKomponen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah yang diambil: "
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvKomponenDiambil"
+            />
+        <TextView
+            android:id="@+id/tvJumlahKomponenVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvJumlahKomponen"
+            android:layout_below="@+id/tvKomponenDiambil"
+            />
+
+        <TextView
+            android:id="@+id/tvnamaKomponen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJumlahKomponen"
+            android:layout_marginTop="10dp"
+            android:text="Waktu Pengambilan: " />
+        <TextView
+            android:id="@+id/tvnamaKomponenVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvnamaKomponen"
+            android:layout_below="@+id/tvJumlahKomponen"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

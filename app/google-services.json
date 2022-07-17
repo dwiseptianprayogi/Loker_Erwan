@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "531978662824",
+    "firebase_url": "https://esp32-gps-firebase-ef97b-default-rtdb.firebaseio.com",
+    "project_id": "esp32-gps-firebase-ef97b",
+    "storage_bucket": "esp32-gps-firebase-ef97b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531978662824:android:498a1ea0c56de4d47d639d",
+        "android_client_info": {
+          "package_name": "com.example.lockererwan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531978662824-h383tq58kpdpgm0tepalkkqof2bs05h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwOaQM-7Lrq_0Ei-nBSBaBJbAE2MAV-54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531978662824-h383tq58kpdpgm0tepalkkqof2bs05h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
