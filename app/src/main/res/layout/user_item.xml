@@ -14,33 +14,66 @@
         >
 
         <TextView
+            android:id="@+id/tvnamaMahasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama: " />
+        <TextView
+            android:id="@+id/tvnamaMahasiswaVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/tvnamaMahasiswa"
+            />
+        <TextView
+            android:id="@+id/tvNpmMahasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnamaMahasiswa"
+            android:layout_marginTop="10dp"
+            android:text="NPM: " />
+        <TextView
+            android:id="@+id/tvNpmMahasiswaVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvNpmMahasiswa"
+            android:layout_below="@+id/tvnamaMahasiswa"
+            />
+
+        <TextView
             android:id="@+id/tvKomponenDiambil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Komponen yang diambil: "
-            />
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvNpmMahasiswa"
+            android:text="Status Komponen: " />
 
         <TextView
             android:id="@+id/tvKomponenDiambilVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNpmMahasiswa"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/tvKomponenDiambil"
-            android:text="Restor" />
+            android:text="null" />
 
         <TextView
             android:id="@+id/tvJumlahKomponen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jumlah yang diambil: "
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/tvKomponenDiambil"
-            />
+            android:layout_marginTop="10dp"
+            android:text="Jumlah Komponen: " />
         <TextView
             android:id="@+id/tvJumlahKomponenVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10"
+            android:text="null"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/tvJumlahKomponen"
@@ -58,7 +91,7 @@
             android:id="@+id/tvnamaKomponenVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10"
+            android:text="null"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/tvnamaKomponen"

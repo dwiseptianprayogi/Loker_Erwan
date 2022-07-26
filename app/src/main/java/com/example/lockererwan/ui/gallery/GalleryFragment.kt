@@ -72,7 +72,7 @@ class GalleryFragment : Fragment() {
     }
 
     private fun getData() {
-        dbRef = FirebaseDatabase.getInstance().getReference("riwayat")
+        dbRef = FirebaseDatabase.getInstance().getReference("lokerErwan/history")
         dbRef.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()){

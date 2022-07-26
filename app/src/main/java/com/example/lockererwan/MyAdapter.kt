@@ -16,9 +16,11 @@ class MyAdapter (private val userList : ArrayList<User>) : RecyclerView.Adapter<
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = userList[position]
 
-        holder.KomponenDiambil.text = currentItem.KomponenDiambil
-        holder.JumlahKomponen.text = currentItem.JumlahKomponen
-        holder.WaktuPengambilan.text = currentItem.WaktuPengambilan
+        holder.KomponenDiambil.text = currentItem.komponen
+        holder.JumlahKomponen.text = currentItem.jumlah
+        holder.WaktuPengambilan.text = currentItem.waktu
+        holder.nama.text = currentItem.nama
+        holder.npm.text = currentItem.npm
 
 //        holder.KomponenDiambil.text = currentItem.firstName
 //        holder.JumlahKomponen.text = currentItem.lastName
@@ -33,6 +35,8 @@ class MyAdapter (private val userList : ArrayList<User>) : RecyclerView.Adapter<
         val KomponenDiambil : TextView = itemView.findViewById(R.id.tvKomponenDiambilVal)
         val JumlahKomponen : TextView = itemView.findViewById(R.id.tvJumlahKomponenVal)
         val WaktuPengambilan : TextView = itemView.findViewById(R.id.tvnamaKomponenVal)
+        val nama : TextView = itemView.findViewById(R.id.tvnamaMahasiswaVal)
+        val npm : TextView = itemView.findViewById(R.id.tvNpmMahasiswaVal)
 
     }
 }

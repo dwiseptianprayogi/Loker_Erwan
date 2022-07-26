@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
         super.onStart()
         val currentUser: FirebaseUser? = auth.getCurrentUser()
         if (currentUser == null) {
-            Toast.makeText(this, "current user null", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "current user null", Toast.LENGTH_SHORT).show()
         } else {
 //            startActivity(Intent(this, NavigationBarActivity::class.java))
             startActivity(Intent(this, NavigationBarActivity::class.java))
