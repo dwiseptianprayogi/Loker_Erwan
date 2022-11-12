@@ -260,9 +260,9 @@ class dialogFragmentSimpan : DialogFragment() {
         val mArgs = arguments
         val myValue2 = mArgs!!.getString("komponen")
 //        val empId = database2.push().key!!
-        val history = User(nama,npm,myValue2,jumlahkomponen,londonDateAndTime)
+        val history = User(nama,npm,myValue2,jumlahkomponen,londonDateAndTime.toString())
         database2 = Firebase.database.reference
-        database2.child("lokerErwan/history").child(londonDateAndTime).setValue(history)
+        database2.child("lokerErwan/history").child(londonDateAndTime.toString()).setValue(history)
             .addOnSuccessListener {
 
             }.addOnFailureListener {

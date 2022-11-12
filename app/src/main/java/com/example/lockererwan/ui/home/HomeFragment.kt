@@ -57,7 +57,7 @@ class HomeFragment : Fragment() {
             val args = Bundle()
             args.putString("key", "simpanTransistor")
             args.putString("komponen", "Simpan Transistor")
-            args.putString("judul", "Simpan Komponen Loker Transistor")
+            args.putString("judul", "Tambah Komponen Loker Transistor")
             simpanTransistor.setArguments(args)
             simpanTransistor.show(fragmenManager, dialogFragmentSimpan::class.java.simpleName)
         }
@@ -67,7 +67,7 @@ class HomeFragment : Fragment() {
             val args = Bundle()
             args.putString("key", "simpanResistor")
             args.putString("komponen", "Simpan Resistor")
-            args.putString("judul", "Simpan Komponen Loker Resistor")
+            args.putString("judul", "Tambah Komponen Loker Resistor")
             simpanTransistor.setArguments(args)
             simpanTransistor.show(fragmenManager, dialogFragmentSimpan::class.java.simpleName)
         }
@@ -77,7 +77,7 @@ class HomeFragment : Fragment() {
             val args = Bundle()
             args.putString("key", "simpanKapasitor")
             args.putString("komponen", "Simpan Kapasitor")
-            args.putString("judul", "Simpan Komponen Loker Kapasitor")
+            args.putString("judul", "Tambah Komponen Loker Kapasitor")
             simpanTransistor.setArguments(args)
             simpanTransistor.show(fragmenManager, dialogFragmentSimpan::class.java.simpleName)
         }
@@ -111,8 +111,8 @@ class HomeFragment : Fragment() {
             args.putString("komponen", "Ambil Kapasitor")
             args.putString("keySave", "simpanKapasitor")
             args.putString("judul", "Ambil Komponen Loker Kapasitor")
-            simpanTransistor.setArguments(args)
-            simpanTransistor.show(fragmenManager, dialogFragmentSimpan::class.java.simpleName)
+                simpanTransistor.setArguments(args)
+                simpanTransistor.show(fragmenManager, dialogFragmentSimpan::class.java.simpleName)
         }
 
         database = FirebaseDatabase.getInstance().getReference("lokerErwan/simpanTransistor")
